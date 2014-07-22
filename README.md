@@ -5,8 +5,9 @@ A simple web application framework for interactive developers.
 
 Installation
 ------------
-
+```
 npm install interactive-framework
+```
 
 Usage
 -----
