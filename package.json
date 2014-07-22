@@ -1,0 +1,28 @@
+{
+  "name": "interactive-framework",
+  "version": "0.0.1",
+  "description": "A web application framework designed for interactive developer.",
+  "main": "interactive-framework.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/opencodes/interactive-framework.git"
+  },
+  "keywords": [
+    "interactive",
+    "framework"
+  ],
+  "author": {
+    "name": "Rajesh Kumar jha"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/opencodes/interactive-framework/issues"
+  },
+  "homepage": "https://github.com/opencodes/interactive-framework",
+  "readme": "ERROR: No README data found!",
+  "_id": "interactive-framework@0.0.0",
+  "_from": "interactive-framework@"
+}
