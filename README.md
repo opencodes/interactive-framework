@@ -1,4 +1,4 @@
-interactive-framework
+![Interactive Framework Logo](http://rkjha.com/cdn/logo.png)
 =========
 
 interactive-framework  is a light weight web application framework for interactive developers. Create a static web server with in a minute.
