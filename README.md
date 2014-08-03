@@ -34,7 +34,7 @@ Usage
 
 ```
 var interactive = require('interactive-framework');
-interactive.listen(3000);
+interactive.listen(<port>);
 
 ```
 
