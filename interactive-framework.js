@@ -17,8 +17,10 @@ var interactive = function(){
 	 */
 	_this.config = function(options){
 		for(var k in options){
-			if(options.k !="" && options.k != undefined && options.k !=="undefined"){
-				_this.options[k] = options[k];
+			if(options.hasOwnProperty(k)) { //for in loop also checks the objects prototype
+				if(options.k !== "" && options.k !== undefined){ 
+					_this.options[k] = options[k];
+				}
 			}
 		}
 	};
