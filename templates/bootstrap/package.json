@@ -1,0 +1,15 @@
+{
+  "name": "static-demo-project",
+  "description": "A web application static project.",
+  "scripts": {
+    "start": "app.js"
+  },
+  "engines": {
+    "node": "0.10.x"
+  },
+  "dependencies": {
+    "interactive-framework": "0.0.4"       
+  }
+}
+
+

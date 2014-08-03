@@ -1,0 +1,28 @@
+#!/usr/bin/env node
+ 
+var program = require('commander');
+var fs = require('fs');
+var path = require( 'path' );
+var ncp = require( 'ncp' ).ncp;
+
+var template_path = path.resolve( __dirname, '../templates/bootstrap' );
+
+function copyRecursiveSync (dest) {
+  // No project name given.
+  if ( !dest.length ) throw new Error( 'specify project name: interactive-framework -c <directory>' );
+
+  console.log( 'creating new project in ' + dest + ' directory' );
+  
+  // Copy template directory to new project.
+  ncp( template_path, dest, function( err ) {
+    if ( err ) throw err;
+    console.log( 'completed successfully!, Change directory to '+dest+' and run " node app " to see in browser.' );
+  } );
+};
+
+program
+  .option('-c, --copy [value]', 'Copy App', copyRecursiveSync)  
+  .option('-h, --help', 'Show Options')  
+  .parse(process.argv);
+  
+if (program.help) console.log(program.option);
